@@ -9,17 +9,11 @@ Pod::Spec.new do |s|
   # ============================================================
 
   s.license  = 'MIT'
-  s.social_media_url = 'https://twitter.com/AFNetworking'
 
   s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.10'
   s.watchos.deployment_target = '2.0'
   s.tvos.deployment_target = '9.0'
-
-  s.ios.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'com.taojeff.AFNetworkingPrivacy' }
-  s.osx.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'com.taojeff.AFNetworkingPrivacy' }
-  s.watchos.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'com.taojeff.AFNetworkingPrivacy-watchOS' }
-  s.tvos.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER' => 'com.taojeff.AFNetworkingPrivacy' }
 
   s.source_files = 'AFNetworking/AFNetworking.h'
 
