@@ -27,17 +27,12 @@ Pod::Spec.new do |s|
 
   s.subspec 'Reachability' do |ss|
     ss.ios.deployment_target = '9.0'
-    ss.osx.deployment_target = '10.10'
-    ss.tvos.deployment_target = '9.0'
-
     ss.source_files = 'AFNetworking/AFNetworkReachabilityManager.{h,m}'
   end
 
   s.subspec 'NSURLSession' do |ss|
     ss.dependency 'AFNetworkingPrivacy/Serialization'
     ss.ios.dependency 'AFNetworkingPrivacy/Reachability'
-    ss.osx.dependency 'AFNetworkingPrivacy/Reachability'
-    ss.tvos.dependency 'AFNetworkingPrivacy/Reachability'
     ss.dependency 'AFNetworkingPrivacy/Security'
 
     ss.source_files = 'AFNetworking/AF{URL,HTTP}SessionManager.{h,m}', 'AFNetworking/AFCompatibilityMacros.h'
@@ -45,7 +40,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'UIKit' do |ss|
     ss.ios.deployment_target = '9.0'
-    ss.tvos.deployment_target = '9.0'
     ss.dependency 'AFNetworkingPrivacy/NSURLSession'
 
     ss.source_files = 'UIKit+AFNetworking'
