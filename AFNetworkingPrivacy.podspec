@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   # ====================== 你自己的定制版 ======================
   s.name     = 'AFNetworkingPrivacy'          # 改成你的库名
-  s.version  = '4.0.1'                        # 版本号（和 GitHub tag 保持一致）
+  s.version  = '4.0.2'                        # 版本号（和 GitHub tag 保持一致）
   s.homepage = 'https://github.com/taojeff/AFNetworkingPrivacy'
   s.source   = { :git => 'https://github.com/taojeff/AFNetworkingPrivacy.git', :tag => s.version }
   s.authors  = { 'taojeff' => '990073834@qq.com' }
@@ -13,6 +13,9 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'AFNetworking/AFNetworking.h'
+
+  s.module_name = 'AFNetworking'
+  s.header_dir  = 'AFNetworking'
 
   # ✅ 核心：自动打包隐私清单，解决 App Store 审核
   s.resource_bundles = {'AFNetworkingPrivacy' => ['PrivacyInfo.xcprivacy']}
